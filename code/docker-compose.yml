@@ -72,6 +72,7 @@ services:
   # ==========================================
   service-a:
     build: ./service-a
+    image: service-a:v1
     container_name: service-a
     ports:
       - "5001:5000"
@@ -87,6 +88,7 @@ services:
 
   service-b:
     build: ./service-b
+    image: service-a:v1
     container_name: service-b
     ports:
       - "5002:5000"
@@ -102,6 +104,7 @@ services:
 
   service-c:
     build: ./service-c
+    image: service-c:v1
     container_name: service-c
     ports:
       - "5003:5000"
@@ -120,6 +123,7 @@ services:
   # ==========================================
   api-gateway:
     build: ./api-gateway
+    image: api-gateway:v1
     container_name: api-gateway
     ports:
       - "8080:8080"

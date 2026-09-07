@@ -132,9 +132,9 @@ git clone https://github.com/ekse-milo/cc-midpoint.git
 3. **Configure Gateway Environment:**
 On `vm-gateway`, configure environment variables pointing to the internal IPs of the backend VMs:
 ```env
-SERVICE_A_URL=[http://10.128.0.2:5000](http://10.128.0.2:5000)
-SERVICE_B_URL=[http://10.128.0.3:5000](http://10.128.0.3:5000)
-SERVICE_C_URL=[http://10.128.0.4:5000](http://10.128.0.4:5000)
+SERVICE_A_URL=http://10.128.0.2:5000
+SERVICE_B_URL=http://10.128.0.3:5000
+SERVICE_C_URL=http://10.128.0.4:5000
 ```
 
 
@@ -144,8 +144,7 @@ Start the services on their respective VMs using Docker Compose:
 ```bash
 sudo docker compose up --build -d service-a
 ```
-*(This will start **only** `service-a` and `mysql-db-a` because `service-a` depends on it).*
-D the  same for `vm-service-b`, `vm-service-c`, and `vm-gateway`. 
+*(This will start **only** `service-a` and `mysql-db-a` because `service-a` depends on it).* Do the same for `vm-service-b`, `vm-service-c`, and `api-gateway`. 
 
 
 
