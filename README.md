@@ -74,7 +74,7 @@ The system consists of three independent domain microservices and one public API
 
 1. **Clone the Repository:**
 ```bash
-git clone [https://github.com/ekse-milo/cc-midpoint.git](https://github.com/ekse-milo/cc-midpoint.git)
+git clone https://github.com/ekse-milo/cc-midpoint.git
 cd cc-midpoint
 ```
 
@@ -125,7 +125,7 @@ SSH into each VM through the GCP Console and install Docker:
 ```bash
 sudo apt update
 sudo apt install -y docker.io docker-compose git
-git clone [https://github.com/ekse-milo/cc-midpoint.git](https://github.com/ekse-milo/cc-midpoint.git)
+git clone https://github.com/ekse-milo/cc-midpoint.git
 ```
 
 
