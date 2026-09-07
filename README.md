@@ -142,27 +142,10 @@ SERVICE_C_URL=[http://10.128.0.4:5000](http://10.128.0.4:5000)
 Start the services on their respective VMs using Docker Compose:
 * **On `vm-service-a`:**
 ```bash
-docker compose up --build -d service-a
+sudo docker compose up --build -d service-a
 ```
 *(This will start **only** `service-a` and `mysql-db-a` because `service-a` depends on it).*
-
-* **On `vm-service-b`:**
-```bash
-docker compose up --build -d service-b
-```
-*(Starts only `service-b` and `mysql-db-b`).*
-
-* **On `vm-service-c`:**
-```bash
-docker compose up --build -d service-c
-```
-*(Starts only `service-c` and `mysql-db-c`).*
-
-* **On `vm-gateway`:**
-```bash
-docker compose up --build -d api-gateway
-```
-*(Starts **only** `api-gateway`).*
+D the  same for `vm-service-b`, `vm-service-c`, and `vm-gateway`. 
 
 
 
