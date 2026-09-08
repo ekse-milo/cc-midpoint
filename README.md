@@ -144,7 +144,7 @@ Start the services on their respective VMs using Docker Compose:
 ```bash
 sudo docker compose up --build -d service-a
 ```
-*(This will start **only** `service-a` and `mysql-db-a` because `service-a` depends on it).* Do the same for `vm-service-b`, `vm-service-c`, and `api-gateway`. 
+*(This will start **only** `service-a` and `mysql-db-a` because `service-a` depends on it).* Do the same for `service-b`, `service-c`, and `api-gateway`. 
 
 
 
